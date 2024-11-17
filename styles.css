@@ -5,7 +5,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
-  background-image: url('images/background.png');
+  background-image: url('images/alphasprintsplashscreen.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@ h1 {
 #grid-container {
   display: grid;
   gap: 5px;
-  margin: 20px auto;
+  margin: 50px auto;
   width: 90%;
   max-width: 600px;
   aspect-ratio: 1;
@@ -157,7 +157,8 @@ h1 {
 #difficulty-options {
   display: grid;
   justify-content: center;
-  gap: 15px;
+  gap: 50px;
+  padding-top: 80px;
 }
 
 .difficulty-btn {
