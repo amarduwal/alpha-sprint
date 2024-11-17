@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="home-page">
+        <h1>Welcome to the Reflex Game!</h1>
+        <p>Select a difficulty level to start playing:</p>
+        <div id="difficulty-options">
+          <button class="difficulty-btn" data-level="easy">Easy</button>
+          <button class="difficulty-btn" data-level="intermediate">
+            Intermediate
+          </button>
+          <button class="difficulty-btn" data-level="hard">Hard</button>
+        </div>
+      </div>
+
+      <div id="game-page" style="display: none">
+        <button id="home-button">
+          <img src="images/home-icon.png" alt="Home" />
+        </button>
+        <div class="controls">
+          <p>Choose Grid Size:</p>
+          <div id="grid-options">
+            <button class="grid-size-btn" data-size="4">4x4</button>
+            <button class="grid-size-btn" data-size="5">5x5</button>
+            <button class="grid-size-btn" data-size="6">6x6</button>
+            <button class="grid-size-btn" data-size="7">7x7</button>
+            <button class="grid-size-btn" data-size="8">8x8</button>
+          </div>
+        </div>
+        <div id="grid-container"></div>
+        <!-- <div id="timer">Time Left: 60s</div> -->
+        <p class="score">Score: <span id="score">0</span></p>
+        <p class="learning-prompt" id="learning-prompt"></p>
+        <div class="grid" id="grid"></div>
+        <!-- <div id="leaderboard"></div> -->
+      </div>
+    </div>
+    <audio id="tap-sound" src="sounds/tap.mp3"></audio>
+    <audio id="score-sound" src="sounds/score.mp3"></audio>
+    <audio id="wrong-sound" src="sounds/wrong.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
