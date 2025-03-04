@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Alpha Sprint</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2 {
+        color: #2c3e50;
+      }
+      a {
+        color: #3498db;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+      }
+    </style>
+    <script>
+      // Set the last updated date dynamically
+      document.addEventListener('DOMContentLoaded', function () {
+        const dateElement = document.getElementById('lastUpdated');
+        const currentDate = new Date();
+        const formattedDate = currentDate.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        });
+        dateElement.textContent = formattedDate;
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p><strong>Last Updated:</strong> <span id="lastUpdated"></span></p>
+
+      <p>
+        Welcome to <strong>Alpha Sprint</strong>! Your privacy is important to
+        us. This Privacy Policy outlines what data we collect, how we use it,
+        and your rights regarding your information.
+      </p>
+
+      <h2>1. Information We Collect</h2>
+      <p>
+        We do not collect personally identifiable information (PII). However, we
+        may collect:
+      </p>
+      <ul>
+        <li>
+          <strong>Game Progress & High Scores:</strong> Stored locally on your
+          device.
+        </li>
+        <li>
+          <strong>Device Information:</strong> Non-personal details like device
+          model, OS, and screen resolution for performance improvements.
+        </li>
+        <li>
+          <strong>Analytics (if enabled):</strong> Data on gameplay sessions to
+          enhance game features.
+        </li>
+      </ul>
+
+      <h2>2. Third-Party Services</h2>
+      <p>
+        If the game includes ads, leaderboards, or analytics, third-party
+        services may collect data according to their own privacy policies:
+      </p>
+      <ul>
+        <li>Google AdMob (for ads)</li>
+        <li>Google Play Services (for leaderboards)</li>
+        <li>Firebase Analytics (for tracking game statistics)</li>
+      </ul>
+      <p>Please refer to their privacy policies for details.</p>
+
+      <h2>3. How We Use Your Information</h2>
+      <p>We use collected data to:</p>
+      <ul>
+        <li>Improve gameplay experience and optimize performance.</li>
+        <li>Fix bugs and crashes.</li>
+        <li>Track high scores and game progress.</li>
+      </ul>
+
+      <h2>4. Data Storage & Security</h2>
+      <p>
+        Your game progress is stored **locally** on your device. If cloud saving
+        is enabled (Google Play Games, Apple Game Center), your data may be
+        stored on those platforms.
+      </p>
+
+      <h2>5. Children's Privacy</h2>
+      <p>
+        This game is for general audiences and does not knowingly collect
+        personal information from children under **13 years old**.
+      </p>
+
+      <h2>6. User Rights & Control</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Reset game data (via game settings).</li>
+        <li>Opt out of analytics if included.</li>
+        <li>Request data deletion by contacting us.</li>
+      </ul>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy periodically. Changes will be
+        reflected with a new “Last Updated” date above.
+      </p>
+
+      <h2>8. Contact Us</h2>
+      <p>If you have any questions or concerns, please contact us:</p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:your@email.com">your@email.com</a>
+      </p>
+      <p>
+        <strong>Website:</strong>
+        <a href="https://yourwebsite.com">yourwebsite.com</a>
+      </p>
+
+      <div class="footer">
+        <p>
+          © <span id="currentYear"></span> Alpha Sprint. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Set the current year dynamically for the footer
+      document.getElementById('currentYear').textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
